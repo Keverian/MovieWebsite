@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Star!</title>
+</head>
+<body>
+    <a href="home.html">Return Home!</a>
+    <h1>Add Stars!</h1>
+
+    <form id="addStar" method="post">
+        <label><b>Star Info: </b></label>
+        <label>
+            <input name="StarName" placeholder="Star name" type="text" required>
+        </label>
+
+        <label>
+            <input name="StarBirthYear" placeholder="Birth Year" type="text">
+        </label>
+        <br/>
+        <input type="submit" value="Add Star Info!">
+    </form>
+
+    <h4>
+        New Star Info:
+    </h4>
+
+    <div id="StarInfo"></div>
+
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="add-star.js"></script>
+</body>
+</html>

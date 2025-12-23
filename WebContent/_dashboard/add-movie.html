@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Movie!</title>
+</head>
+<body>
+    <a href="home.html">Return Home!</a>
+    <h1>Add Movies!</h1>
+
+    <form id="addMovie" method="post">
+        <label><b>Movie Info: </b></label>
+        <label>
+            <input name="MovieTitle" placeholder="Movie Title" type="text" required>
+        </label>
+
+        <label>
+            <input name="MovieRelease" placeholder="Year of Movie Release" type="text" required>
+        </label>
+
+        <label>
+            <input name="MovieDirector" placeholder="Movie Director" type="text" required>
+        </label>
+
+        <label>
+            <input name="MovieGenre" placeholder="Genre of Movie" type="text" required>
+        </label>
+        <br/>
+        <label><b>Movie Star Info: </b></label>
+        <label>
+            <input name="MovieStar" placeholder="Name of star of the movie" type="text" required>
+        </label>
+
+        <label>
+            <input name="StarBirth" placeholder="(Optional) Star's year of birth" type="text">
+        </label>
+        <br/>
+
+        <input type="submit" value="Add Movie Info!">
+    </form>
+
+    <h4>
+        New Movie Info:
+    </h4>
+
+    <div id="MovieInfo"></div>
+
+    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+    <script src="add-movie.js"></script>
+</body>
+</html>

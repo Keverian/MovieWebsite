@@ -1,0 +1,48 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fablix</title>
+
+</head>
+<body>
+Welcome to Fablix!
+<p id="sessionID"></p>
+<p id="lastAccessTime"></p>
+
+<!--search bar functionality-->
+<form ACTION="movie-page.html" id="main-search">
+    <label style="font-size: 24px;">Main Search</label>
+    <br><br>
+    <div class="search-row">
+        <input name="Title" placeholder="search title" type="text">
+        <input type="submit" VALUE="search">
+    </div>
+</form>
+<br>
+<form ACTION="movie-page.html" id="search">
+    <label>Search for movies!</label>
+    <br>
+    <label>
+        <!--all search parameters-->
+        <input name="Title" placeholder="search title"type="text"> <br>
+        <input name="Year" placeholder="search year" type="text"> <br>
+        <input name="Director" placeholder="search director" type="text"> <br>
+        <input name="StarName" placeholder="search star's name" type="text"> <br>
+    </label>
+    <br>
+    <input type="submit" VALUE="search">
+</form>
+
+<div id="genre_list"></div>
+<div id="title_list"></div>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/devbridge-autocomplete@1.4.11/dist/jquery.autocomplete.min.js"></script>
+<script type='text/javascript' src='index.js'></script>
+<script type='text/javascript' src='auto-complete.js' defer></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
